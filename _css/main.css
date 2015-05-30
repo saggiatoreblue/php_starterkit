@@ -1,0 +1,559 @@
+/* ==================================================
+ Reset
+================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+img {
+  display: block;
+}
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+  margin: 5px 0;
+}
+:focus {
+  outline: none;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*  Base  Grid
+================================================== */
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.row {
+  margin-bottom: 20px;
+}
+/* Nested Column Classes */
+.column.alpha,
+.columns.alpha {
+  margin-left: 0;
+}
+.column.omega,
+.columns.omega {
+  margin-right: 0;
+}
+/* Base Grid */
+.container .one.column,
+.container .one.columns {
+  width: 80px;
+}
+.container .two.columns {
+  width: 180px;
+}
+.container .three.columns {
+  width: 280px;
+}
+.container .four.columns {
+  width: 380px;
+}
+.container .five.columns {
+  width: 480px;
+}
+.container .six.columns {
+  width: 580px;
+}
+.container .seven.columns {
+  width: 680px;
+}
+.container .eight.columns {
+  width: 780px;
+}
+.container .nine.columns {
+  width: 880px;
+}
+.container .ten.columns {
+  width: 980px;
+}
+.container .eleven.columns {
+  width: 1080px;
+}
+.container .twelve.columns {
+  width: 1180px;
+}
+.container .one-third.column {
+  width: 380px;
+}
+.container .two-thirds.column {
+  width: 780px;
+}
+.fullWidth {
+  width: 100%;
+}
+/* Offsets */
+.container .offset-by-one {
+  padding-left: 100px;
+}
+.container .offset-by-two {
+  padding-left: 200px;
+}
+.container .offset-by-three {
+  padding-left: 300px;
+}
+.container .offset-by-four {
+  padding-left: 400px;
+}
+.container .offset-by-five {
+  padding-left: 500px;
+}
+.container .offset-by-six {
+  padding-left: 600px;
+}
+.container .offset-by-seven {
+  padding-left: 700px;
+}
+.container .offset-by-eight {
+  padding-left: 800px;
+}
+.container .offset-by-nine {
+  padding-left: 900px;
+}
+.container .offset-by-ten {
+  padding-left: 1000px;
+}
+.container .offset-by-eleven {
+  padding-left: 1100px;
+}
+.container .offset-by-twelve {
+  padding-left: 1200px;
+}
+@media only screen and (max-width: 1050px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .container .column,
+  .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .row {
+    margin-bottom: 20px;
+  }
+  /* Nested Column Classes */
+  .column.alpha,
+  .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega,
+  .columns.omega {
+    margin-right: 0;
+  }
+  /* Base Grid */
+  .container .one.column,
+  .container .one.columns {
+    width: 6.333%;
+  }
+  .container .two.columns {
+    width: 14.666%;
+  }
+  .container .three.columns {
+    width: 23%;
+  }
+  .container .four.columns {
+    width: 31.333%;
+  }
+  .container .five.columns {
+    width: 39.666%;
+  }
+  .container .six.columns {
+    width: 48%;
+  }
+  .container .seven.columns {
+    width: 56.333%;
+  }
+  .container .eight.columns {
+    width: 64.666%;
+  }
+  .container .nine.columns {
+    width: 73%;
+  }
+  .container .ten.columns {
+    width: 81.333%;
+  }
+  .container .eleven.columns {
+    width: 89.666%;
+  }
+  .container .twelve.columns {
+    width: 98%;
+  }
+  .container .one-third.column {
+    width: 31.333%;
+  }
+  .container .two-thirds.column {
+    width: 64.666%;
+  }
+  .container .fullWidthInsideContainer {
+    width: 109%;
+    margin-left: -4.5%;
+    height: 300px;
+  }
+  .container .offset-by-one {
+    margin-left: 9.3335%;
+  }
+  .container .offset-by-three {
+    margin-left: 26%;
+  }
+  .container .pull-by-one {
+    margin-left: -9.3335%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .container .column,
+  .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .row {
+    margin-bottom: 20px;
+  }
+  /* Nested Column Classes */
+  .column.alpha,
+  .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega,
+  .columns.omega {
+    margin-right: 0;
+  }
+  /* Base Grid */
+  .container .one.column,
+  .container .one.columns {
+    width: 48%;
+  }
+  .container .two.columns {
+    width: 48%;
+  }
+  .container .three.columns {
+    width: 48%;
+  }
+  .container .four.columns {
+    width: 48%;
+  }
+  .container .five.columns {
+    width: 48%;
+  }
+  .container .six.columns {
+    width: 48%;
+  }
+  .container .seven.columns {
+    width: 98%;
+  }
+  .container .eight.columns {
+    width: 98%;
+  }
+  .container .nine.columns {
+    width: 98%;
+  }
+  .container .ten.columns {
+    width: 98%;
+  }
+  .container .eleven.columns {
+    width: 98%;
+  }
+  .container .twelve.columns {
+    width: 98%;
+  }
+  .container .one-third.column {
+    width: 98%;
+  }
+  .container .two-thirds.column {
+    width: 98%;
+  }
+  .container .sideNav.columns {
+    width: 109%;
+    margin-left: -4.5%;
+    background: #f7f7f7;
+  }
+  .container .columns.fullWidthMobile {
+    width: 98%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .container .column,
+  .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .row {
+    margin-bottom: 20px;
+  }
+  /* Nested Column Classes */
+  .column.alpha,
+  .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega,
+  .columns.omega {
+    margin-right: 0;
+  }
+  /* Base Grid */
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 98%;
+  }
+  .container .sideNav.columns {
+    width: 109%;
+    margin-left: -4.5%;
+    background: #f7f7f7;
+  }
+}
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* ==================================================
+Variables
+================================================== */
+/* ==================================================
+Mixins / Classes
+================================================== */
+/* ==================================================
+Globals
+================================================== */
+body {
+  min-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+#pageContainer {
+  min-height: 500px;
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+}
+/* ==================================================
+Header
+================================================== */
+#mainHeader {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+/* ==================================================
+Footer
+================================================== */
+#mainFooter {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
